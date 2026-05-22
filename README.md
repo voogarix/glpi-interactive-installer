@@ -50,6 +50,7 @@ chmod +x glpi.sh
 sudo ./glpi.sh
 ```
 ### 4. Follow the Interactive Prompts
+```text
 The script will guide you through:
 
 Database configuration (name, user, password)
@@ -59,17 +60,16 @@ Web server settings (domain/IP, HTTPS)
 Email configuration (for backup alerts)
 
 Backup settings (directory, retention, schedule)
+```
 
 ### 5. Complete GLPI Web Installation
+```text
 After the script finishes:
-
 Open your browser to http://your-domain-or-ip
-
 Follow the GLPI web installation wizard
-
 Enter the database credentials provided by the script
-
 Complete the setup and remove the install directory
+```
 
 ### 📂 Installation Structure
 ```text
