@@ -180,12 +180,12 @@ This project is licensed under the GPL 3.0 License - see the [LICENSE](https://g
 
 ## 🙏 Acknowledgments
 
-[GLPI Project](https://glpi-project.org/) - For the great ITAM software
-[Debian](https://www.debian.org/) - For the stable operating system
-Contributors and users who provided feedback
+[GLPI Project](https://glpi-project.org/) - For the great ITAM software  
+[Debian](https://www.debian.org/) - For the stable operating system  
+Contributors and users who provided feedback  
 
 ## 📞 Support
 
-📖 Documentation: [GLPI Official Docs](https://glpi-install.readthedocs.io/)
-💬 Community: [GLPI Forums](https://forum.glpi-project.org/)
-🐛 Issues: [GitHub Issues](https://github.com/voogarix/glpi-interactive-installer/issues)
+📖 Documentation: [GLPI Official Docs](https://glpi-install.readthedocs.io/)  
+💬 Community: [GLPI Forums](https://forum.glpi-project.org/)  
+🐛 Issues: [GitHub Issues](https://github.com/voogarix/glpi-interactive-installer/issues)  
