@@ -69,7 +69,7 @@ Enter the database credentials provided by the script
 Complete the setup and remove the install directory
 
 ## 📝 Interactive Configuration Options
-# Database Configuration
+#### Database Configuration
 # Option	Description	Default
 # Database Name	Name for GLPI database	glpidb
 # Database User	Database user for GLPI	glpiuser
