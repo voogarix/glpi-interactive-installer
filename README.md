@@ -180,6 +180,3 @@ sudo tail -f /var/log/apache2/glpi_error.log
 # Watch backup logs
 sudo tail -f /var/backups/glpi/backup.log
 ```
-
-## 🔒 Security Recommendations
-
