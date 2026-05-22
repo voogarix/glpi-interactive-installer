@@ -1,6 +1,6 @@
 # 🚀 GLPI Interactive Installation Script for Debian 12.9
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v3-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-3.0.en.html)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![Debian](https://img.shields.io/badge/Debian-12.9-red.svg)](https://www.debian.org/)
 [![GLPI](https://img.shields.io/badge/GLPI-10.0.x-blue.svg)](https://glpi-project.org/)
 [![Bash](https://img.shields.io/badge/Bash-5.2+-green.svg)](https://www.gnu.org/software/bash/)
