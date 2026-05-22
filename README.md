@@ -177,11 +177,11 @@ Open a Pull Request
 This project is licensed under the GPL 3.0 License - see the [LICENSE](https://github.com/voogarix/glpi-interactive-installer/tree/main?tab=GPL-3.0-1-ov-file#GPL-3.0-1-ov-file) file for details.
 
 ## 🙏 Acknowledgments
-GLPI Project - For the great ITAM software
-Debian - For the stable operating system
+[GLPI Project](https://glpi-project.org/) - For the great ITAM software
+[Debian](https://www.debian.org/) - For the stable operating system
 Contributors and users who provided feedback
 
 ## 📞 Support
-📖 Documentation: GLPI Official Docs
-💬 Community: GLPI Forums
-🐛 Issues: GitHub Issues
+📖 Documentation: [GLPI Official Docs](https://glpi-install.readthedocs.io/)
+💬 Community: [GLPI Forums](https://forum.glpi-project.org/)
+🐛 Issues: [GitHub Issues](https://github.com/voogarix/glpi-interactive-installer/issues)
