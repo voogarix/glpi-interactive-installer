@@ -34,17 +34,17 @@ An interactive, semi-automated installation script for **GLPI (IT Asset Manageme
 ### 1. Download the Script
 
 ```bash
-wget https://raw.githubusercontent.com/voogarix/glpi-interactive-installer/main/glpi_install.sh
+wget https://raw.githubusercontent.com/voogarix/glpi-interactive-installer/main/glpi.sh
 # or
-curl -O https://raw.githubusercontent.com/voogarix/glpi-interactive-installer/main/glpi_install.sh
+curl -O https://raw.githubusercontent.com/voogarix/glpi-interactive-installer/main/glpi.sh
 ```
 ### 2. Make it Executable
 ```bash
-chmod +x glpi_install.sh
+chmod +x glpi.sh
 ```
 ### 3. Run as Root
 ```bash
-sudo ./glpi_install.sh
+sudo ./glpi.sh
 ```
 ### 4. Follow the Interactive Prompts
 The script will guide you through:
