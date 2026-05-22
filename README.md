@@ -7,7 +7,7 @@
 
 ## ⚠️ Disclaimer
 This script is provided as-is without any warranty. Always test in a development environment before production use. Please ensure you have proper backups before running the script.
-## Description
+## 📝 Description
 An interactive, semi-automated installation script for **GLPI (IT Asset Management)** on **Debian 12.9 (Bookworm)**. This script sets up the complete server environment (Apache, PHP, MariaDB) and configures daily backups, while allowing you to complete the GLPI web installation manually.
 
 ## ✨ Features
