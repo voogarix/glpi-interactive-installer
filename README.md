@@ -5,6 +5,9 @@
 [![GLPI](https://img.shields.io/badge/GLPI-10.0.x-blue.svg)](https://glpi-project.org/)
 [![Bash](https://img.shields.io/badge/Bash-5.2+-green.svg)](https://www.gnu.org/software/bash/)
 
+## ⚠️ Disclaimer
+This script is provided as-is without any warranty. Always test in a development environment before production use. Please ensure you have proper backups before running the script.
+
 An interactive, semi-automated installation script for **GLPI (IT Asset Management)** on **Debian 12.9 (Bookworm)**. This script sets up the complete server environment (Apache, PHP, MariaDB) and configures daily backups, while allowing you to complete the GLPI web installation manually.
 
 ## ✨ Features
@@ -162,3 +165,23 @@ sudo tail -f /var/log/apache2/glpi_error.log
 # Watch backup logs
 sudo tail -f /var/backups/glpi/backup.log
 ```
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+Fork the repository
+Create your feature branch (git checkout -b feature/AmazingFeature)
+Commit your changes (git commit -m 'Add some AmazingFeature')
+Push to the branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+
+## 📝 License
+This project is licensed under the GPL 3.0 License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+GLPI Project - For the great ITAM software
+Debian - For the stable operating system
+Contributors and users who provided feedback
+
+## 📞 Support
+📖 Documentation: GLPI Official Docs
+💬 Community: GLPI Forums
+🐛 Issues: GitHub Issues
