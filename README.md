@@ -69,23 +69,25 @@ Enter the database credentials provided by the script
 Complete the setup and remove the install directory
 
 ## 📝 Interactive Configuration Options
+```text
 #### Database Configuration
-# Option	Description	Default
-# Database Name	Name for GLPI database	glpidb
-# Database User	Database user for GLPI	glpiuser
-# Password Option	Choose your password or auto-generate	Auto-generate
-# Web Server Configuration
-# Option	Description	Default
-# Domain/IP	Your GLPI access URL/IP	Required
-# HTTPS	Enable Let's Encrypt SSL	n (No)
-# Email Configuration
-# Option	Description	Default
-# Admin Email	For backup notifications	Required
-# Backup Configuration
-# Option	Description	Default
-# Backup Directory	Where to store backups	/var/backups/glpi
-# Retention Days	How long to keep backups	30
-# Backup Time	When to run daily backup (24h)	02:00
+#### Option	Description	Default
+#### Database Name	Name for GLPI database	glpidb
+#### Database User	Database user for GLPI	glpiuser
+#### Password Option	Choose your password or auto-generate	Auto-generate
+#### Web Server Configuration
+#### Option	Description	Default
+#### Domain/IP	Your GLPI access URL/IP	Required
+#### HTTPS	Enable Let's Encrypt SSL	n (No)
+#### Email Configuration
+#### Option	Description	Default
+#### Admin Email	For backup notifications	Required
+#### Backup Configuration
+#### Option	Description	Default
+#### Backup Directory	Where to store backups	/var/backups/glpi
+#### Retention Days	How long to keep backups	30
+#### Backup Time	When to run daily backup (24h)	02:00
+```
 ### 📂 Installation Structure
 ```text
 /var/www/html/glpi/           # GLPI installation directory
