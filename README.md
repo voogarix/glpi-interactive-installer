@@ -174,7 +174,7 @@ Push to the branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
 ## 📝 License
-This project is licensed under the GPL 3.0 License - see the LICENSE file for details.
+This project is licensed under the GPL 3.0 License - see the [LICENSE](https://github.com/voogarix/glpi-interactive-installer/tree/main?tab=GPL-3.0-1-ov-file#GPL-3.0-1-ov-file) file for details.
 
 ## 🙏 Acknowledgments
 GLPI Project - For the great ITAM software
