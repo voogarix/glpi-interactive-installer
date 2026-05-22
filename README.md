@@ -37,3 +37,149 @@ An interactive, semi-automated installation script for **GLPI (IT Asset Manageme
 wget https://raw.githubusercontent.com/voogarix/glpi-interactive-installer/main/glpi_install.sh
 # or
 curl -O https://raw.githubusercontent.com/voogarix/glpi-interactive-installer/main/glpi_install.sh
+```
+### 2. Make it Executable
+```bash
+chmod +x glpi_install.sh
+```
+### 3. Run as Root
+```bash
+sudo ./glpi_install.sh
+```
+### 4. Follow the Interactive Prompts
+The script will guide you through:
+
+Database configuration (name, user, password)
+
+Web server settings (domain/IP, HTTPS)
+
+Email configuration (for backup alerts)
+
+Backup settings (directory, retention, schedule)
+
+### 5. Complete GLPI Web Installation
+After the script finishes:
+
+Open your browser to http://your-domain-or-ip
+
+Follow the GLPI web installation wizard
+
+Enter the database credentials provided by the script
+
+Complete the setup and remove the install directory
+
+## 📝 Interactive Configuration Options
+Database Configuration
+Option	Description	Default
+Database Name	Name for GLPI database	glpidb
+Database User	Database user for GLPI	glpiuser
+Password Option	Choose your password or auto-generate	Auto-generate
+Web Server Configuration
+Option	Description	Default
+Domain/IP	Your GLPI access URL/IP	Required
+HTTPS	Enable Let's Encrypt SSL	n (No)
+Email Configuration
+Option	Description	Default
+Admin Email	For backup notifications	Required
+Backup Configuration
+Option	Description	Default
+Backup Directory	Where to store backups	/var/backups/glpi
+Retention Days	How long to keep backups	30
+Backup Time	When to run daily backup (24h)	02:00
+### 📂 Installation Structure
+```text
+/var/www/html/glpi/           # GLPI installation directory
+├── public/                   # Web root
+├── config/                   # Configuration files
+├── files/                    # Uploads and generated files
+└── install/                  # Installer (remove after setup)
+
+/var/log/
+├── glpi/                     # GLPI logs
+└── apache2/                  # Apache logs
+
+/var/backups/glpi/            # Backup directory
+├── glpi_backup_*.tar.gz      # Daily backups
+└── backup.log               # Backup logs
+
+/root/glpi_installation_info.txt  # Installation summary
+/var/log/glpi_install_*.log       # Installation log
+```
+## 🔧 Post-Installation Tasks
+
+### 1. Complete GLPI Web Installation
+
+```bash
+# Access your GLPI instance
+http://your-server-ip-or-domain
+
+# Use the database credentials from the installation summary
+# Database host: localhost
+# Database name: [your-db-name]
+# Database user: [your-db-user]
+# Database password: [your-db-password]
+```
+### 2. Secure Your Installation
+
+```bash
+# Remove the install directory after setup
+sudo rm -rf /var/www/html/glpi/install
+
+# Change default GLPI admin password
+# Login with glpi/glpi and change immediately
+
+# Set proper file permissions
+sudo chmod 640 /var/www/html/glpi/config/config_db.php
+```
+### 3. Test Backup System
+```bash
+# Run manual backup test
+sudo /usr/local/bin/glpi_backup.sh
+
+# Check backup log
+sudo tail -f /var/backups/glpi/backup.log
+```
+
+## 🛠️ Maintenance Commands
+
+### Service management
+
+```bash
+# Restart Apache
+sudo systemctl restart apache2
+
+# Restart MariaDB
+sudo systemctl restart mariadb
+
+# Check service status
+sudo systemctl status apache2 mariadb
+```
+
+## Backup Management
+
+```bash
+# Manual backup
+sudo /usr/local/bin/glpi_backup.sh
+
+# List backups
+ls -lh /var/backups/glpi/
+
+# Restore from backup
+sudo tar -xzf /var/backups/glpi/glpi_backup_*.tar.gz -C /
+```
+
+## Log Monitoring
+
+```bash
+# Watch GLPI logs
+sudo tail -f /var/log/glpi/*.log
+
+# Watch Apache logs
+sudo tail -f /var/log/apache2/glpi_error.log
+
+# Watch backup logs
+sudo tail -f /var/backups/glpi/backup.log
+```
+
+## 🔒 Security Recommendations
+
